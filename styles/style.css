@@ -1,0 +1,87 @@
+:root {
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+    font-family: 'late', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); 
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+    outline: none;
+}
+
+body {
+    background-color: black;
+}
+
+/* section-container design */
+.section-container {
+    height: 30em;
+    width: auto;
+}
+
+/* header-container */
+#header-top-container {
+    background-color: blue;
+    height: 20em;
+}
+
+    /* nav-bar area */
+    #nav-bar {
+        background-color: red;
+        height: 8em;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: center;
+    }
+
+            /* nav icons */
+            .nav-box {
+                background-color: green;
+            }
+
+            #nav-box-1, #nav-box-2, #nav-box-3 {
+                height: 8em;
+                width: 8em;
+                display: inline-block;
+                margin-top: -60px;
+            }
+
+/*About Section */
+#about-container {
+    background-color: orange;
+}
+
+    #skills-container {
+        background-color: purple;
+        height: 10em;
+    }
+
+    #about-me-container {
+        height: 15em;
+    }
+
+/* portfolio area */
+#portfolio-container {
+    background-color: salmon;
+    height: 25em;
+    margin-top: 2em;
+}
+
+/* contact area */
+#contact-container {
+    background-color: aquamarine;
+    height: 25em;
+    margin-top: 2em;
+}
+
+/* footer area */
+#footer-container {
+    background-color: magenta;
+    height: 13em;
+    margin-top: 2em;
+}
