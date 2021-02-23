@@ -1,5 +1,10 @@
 :root {
-
+    --color1: rgba(255,255,255,1);
+    --color2: rgba(248,250,255,1);
+    --color3: rgba(246,246,246,1);
+    --color4: rgba(45,45,45,1);
+    --color5: rgba(27,35,40,1);
+    --color6: rgba(15,16,18,1);
 }
 
 html {
@@ -26,40 +31,72 @@ body {
 /* header-container */
 #header-top-container {
     background-color: blue;
-    height: 20em;
+    height: 100%;
+    position: relative;
+    overflow: hidden; 
+    opacity: 0.2;
+    z-index: -1;
 }
+    #header-video {
+        width: 100%;
+    }
 
     /* nav-bar area */
     #nav-bar {
-        background-color: red;
+        background-color: var(--color6);
         height: 8em;
         display: flex;
         flex-direction: row;
-        gap: 1em;
+        gap: 2.5em;
         justify-content: center;
     }
 
             /* nav icons */
             .nav-box {
-                background-color: green;
+                background-color: var(--color4);
+                color: var(--color1);
             }
 
-            #nav-box-1, #nav-box-2, #nav-box-3 {
-                height: 8em;
-                width: 8em;
-                display: inline-block;
-                margin-top: -60px;
+            .nav-box:hover, .nav-box:focus {
+                transform: scale(1.15);
             }
+
+                #nav-box-1, #nav-box-2, #nav-box-3 {
+                    height: 12em;
+                    width: 12em;
+                    display: inline-block;
+                    margin-top: -6em;
+                }
+
+                .nav-box > i {
+                    margin: 15% 0% 0 29%;
+                    font-size: 4em;
+                }
+
+                .nav-box-text {
+                    text-align: center;
+                    font-size: 2.2em;
+                    margin-top: .7em;
+                }
 
 /*About Section */
 #about-container {
+    margin-top: 7vh;
     background-color: orange;
 }
 
     #skills-container {
-        background-color: purple;
+        background-color: var(--color2);
         height: 10em;
+        text-align: center;
+        padding: 1px 0 9px 0;
+        letter-spacing: 1em;
     }
+
+        #skills-container > * i {
+            font-size: 9em;
+            color: var(--color4);
+        }
 
     #about-me-container {
         height: 15em;
