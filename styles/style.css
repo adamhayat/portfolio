@@ -11,7 +11,7 @@ html {
     margin: 0;
     padding: 0;
     overscroll-behavior: none;
-    font-family: 'late', sans-serif;
+    font-family: 'lato', sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); 
     -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
     font-size: 18px;
@@ -20,6 +20,30 @@ html {
 
 body {
     background-color: black;
+}
+
+/* font styles */
+h1 {
+    color: var(--color1);
+    font-size: 4em;
+    font-weight: 900;
+    text-align: center;
+    padding: .2em;
+    letter-spacing: .01em;
+}
+
+h2 {
+    color: var(--color5);
+    font-size: 3.3em;
+    font-weight: 900;
+    text-align: left;
+    padding: 0 .2em 0 .2em; 
+}
+
+.paragraph {
+    color: var(--color5);
+    font-size: 2.5em;
+    padding: 0 1em;
 }
 
 /* section-container design */
@@ -41,13 +65,19 @@ body {
         width: 100%;
     }
 
+    /* H1 area */
+    #h1-container {
+        margin-top: -28em;
+        margin-bottom: 15em;
+        opacity: 0.4;
+    }
+
     /* nav-bar area */
     #nav-bar {
         background-color: var(--color6);
         height: 8em;
         display: flex;
         flex-direction: row;
-        gap: 2.5em;
         justify-content: center;
     }
 
@@ -65,7 +95,10 @@ body {
                     height: 12em;
                     width: 12em;
                     display: inline-block;
-                    margin-top: -6em;
+                    margin-top: -9em;
+                    margin-left: 1.3em;
+                    margin-right: 1.3em;
+                    flex: 1 1 auto;
                 }
 
                 .nav-box > i {
@@ -81,14 +114,48 @@ body {
 
 /*About Section */
 #about-container {
-    margin-top: 7vh;
-    background-color: orange;
+    margin-top: 8vh;
+    background-color: var(--color4);
+    height: auto;
 }
 
+    #h2-about {
+        padding: .7em .4em;
+    }
+
+    #about-text-image-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2em;
+    }
+    
+    #about-text-container {
+        justify-self: flex-start;
+        flex: 2 1 auto;
+    }
+
+    #about-image-container {
+        justify-self: flex-end;
+        flex: 0 1 auto;
+        padding: 0 2em 5em 0;
+        margin-top: 3em;
+        float: right;
+    }
+    
+    #about-image-container > img {
+        border: .3em solid gray;
+        border-radius: 55%;
+        width: 20em;
+        height: auto;
+        box-shadow: 0 5px 10px gray, 0 4px 4px gray;
+    }
+
+    /* skills area */
     #skills-container {
-        background-color: var(--color2);
-        height: 10em;
+        background-color: var(--color3);
+        height: 10.5em;
         text-align: center;
+        margin-top: -2.6em;
         padding: 1px 0 9px 0;
         letter-spacing: 1em;
     }
@@ -99,12 +166,13 @@ body {
         }
 
     #about-me-container {
-        height: 15em;
+        background-color: var(--color3);
+        height: auto;
     }
 
 /* portfolio area */
 #portfolio-container {
-    background-color: salmon;
+    background-color: (salmon);
     height: 25em;
     margin-top: 2em;
 }
