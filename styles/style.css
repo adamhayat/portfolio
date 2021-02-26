@@ -54,7 +54,7 @@ h2 {
 
 /* header-container */
 #header-top-container {
-    background-color: blue;
+    background-color: var(--color5);
     height: 100%;
     position: relative;
     overflow: hidden; 
@@ -121,6 +121,7 @@ h2 {
 
     #h2-about {
         padding: .7em .4em;
+        margin-bottom: -.5em;
     }
 
     #about-text-image-container {
@@ -128,7 +129,7 @@ h2 {
         flex-direction: row;
         margin-bottom: 2em;
     }
-    
+
     #about-text-container {
         justify-self: flex-start;
         flex: 2 1 auto;
@@ -155,7 +156,7 @@ h2 {
         background-color: var(--color3);
         height: 10.5em;
         text-align: center;
-        margin-top: -2.6em;
+        margin-top: -2.2em;
         padding: 1px 0 9px 0;
         letter-spacing: 1em;
     }
@@ -172,10 +173,45 @@ h2 {
 
 /* portfolio area */
 #portfolio-container {
-    background-color: (salmon);
-    height: 25em;
-    margin-top: 2em;
+    background-color: var(--color4);
+    height: auto;
 }
+
+#portfolio-container > * {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+    #portfolio-container {
+        padding: 1.8em 2.2em;
+    }
+
+    #h2-portfolio {
+        margin-bottom: 1em;
+    }
+    .portfolio-grid {
+        margin-left: 2em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+        grid-gap: 4em;
+        width: 100%;
+    }
+
+        .portfolio-item {
+            color: var(--color6);
+        }
+
+            .portfolio-image {
+                width: 100%;
+                opacity: 0.7;
+            }
+
+            .portfolio-image:hover, .portfolio-image:focus {
+                transform: scale(1.06);
+                opacity: 1;
+            }
+
 
 /* contact area */
 #contact-container {
