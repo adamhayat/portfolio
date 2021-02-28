@@ -204,14 +204,34 @@ h2 {
 
             .portfolio-image {
                 width: 100%;
-                opacity: 0.7;
             }
 
-            .portfolio-image:hover, .portfolio-image:focus {
+            .portfolio-box {
+                opacity: 0.6;
+            }
+
+            .portfolio-bottom {
+                height: auto;
+                width: 100%;
+                background-color: var(--color3);
+                padding-bottom: 1em;
+            }
+
+            .portfolio-box:hover, .portfolio-box:focus {
                 transform: scale(1.06);
                 opacity: 1;
             }
 
+            .portfolio-grid > * p {
+                margin: -.3em;
+                padding: .2em .4em;
+            }
+
+            .portfolio-box {
+                border: 1em solid var(--color3);
+                border-radius: 1em;
+                text-align: center;
+            }
 
 /* contact area */
 #contact-container {
