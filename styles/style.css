@@ -52,6 +52,10 @@ h2 {
     width: auto;
 }
 
+.container-width {
+    max-width: 1024px;
+}
+
 /* header-container */
 #header-top-container {
     background-color: var(--color5);
@@ -193,7 +197,7 @@ h2 {
     .portfolio-grid {
         margin-left: 2em;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
         grid-gap: 4em;
         width: 100%;
     }
@@ -228,9 +232,18 @@ h2 {
             }
 
             .portfolio-box {
-                border: 1em solid var(--color3);
+                border: 1em solid var(--color6);
                 border-radius: 1em;
                 text-align: center;
+            }
+
+            .portfolio-separator {
+                width: 80%;
+            }
+
+            .portfolio-separator {
+                height: 4px;
+                background-color: var(--color6);
             }
 
 /* contact area */
