@@ -46,6 +46,10 @@ h2 {
     padding: 0 1em;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* section-container design */
 .section-container {
     height: 30em;
@@ -200,6 +204,7 @@ h2 {
         grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
         grid-gap: 4em;
         width: 100%;
+        align-items: center;
     }
 
         .portfolio-item {
@@ -245,6 +250,29 @@ h2 {
                 height: 4px;
                 background-color: var(--color6);
             }
+
+            .portfolio-link-area {
+                display: none;
+            }
+
+            .portfolio-box:hover .portfolio-link-area {
+                display: block;
+                background-color: var(--color6);
+                height: 100%;
+                width: 100%;
+                padding: 0px 1px;
+                margin: 0 -1px -19px;;
+            }
+
+                .portfolio-link-separator {
+                    margin: 18px 0;
+                    opacity: 0;
+                }
+
+                .portfolio-link-text {
+                    color: white;
+                    font-size: 3em;
+                }
 
 /* contact area */
 #contact-container {
